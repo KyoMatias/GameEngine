@@ -8,6 +8,7 @@ public class ShapeGenerator : MonoBehaviour
     [SerializeField] private float _focalLength;
     [SerializeField] private Shape[] _shapesToDraw;
     [SerializeField] private Cube drawcube;
+    [SerializeField] private Pyramid drawpyr;
 
     private void OnPostRender()
     {
@@ -20,6 +21,7 @@ public class ShapeGenerator : MonoBehaviour
         DrawShapes();
 
 
+
         GL.End();
         GL.PopMatrix();
     }
@@ -29,14 +31,29 @@ public class ShapeGenerator : MonoBehaviour
         {
             var shapeZ = shape.transformPosition.z;
             var actualPerspective = _focalLength / (shapeZ + _focalLength);
-            
+        DrawCube();
+        drawPyramid();
         }
 
+    }
+
+    void DrawCube()
+    {
         DrawLine(drawcube.Frontside);
         DrawLine(drawcube.Backside);
         DrawLine(drawcube.Leftside);
         DrawLine(drawcube.rightSide);
     }
+
+    void drawPyramid()
+    {
+        DrawLine(drawpyr.front);
+        DrawLine(drawpyr.back);
+        DrawLine(drawpyr.right);
+        DrawLine(drawpyr.left);
+    }
+
+
 
     private void DrawLine(Vector3[] vector3s)
     {

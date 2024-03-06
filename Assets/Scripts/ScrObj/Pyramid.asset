@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ec23ede342e2434eac3fcfbd2d5fdfa, type: 3}
-  m_Name: Cube
+  m_Script: {fileID: 11500000, guid: c855fddaa4170b444be625741e5ddb27, type: 3}
+  m_Name: Pyramid
   m_EditorClassIdentifier: 
-  Length: 1
-  Width: 1
-  Height: 1
-  TransformRoot: {x: 0, y: 0, z: -7.79}
+  len: 1
+  wid: 1
+  hei: 1
+  root: {x: -1.46, y: 0, z: 5.89}

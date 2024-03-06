@@ -323,9 +323,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _lineMaterial: {fileID: 2100000, guid: 6532a92ccea26194eabbe249e1778e1a, type: 2}
-  _focalLength: 1
-  _shapesToDraw: []
+  _focalLength: 10
+  _shapesToDraw:
+  - {fileID: 11400000, guid: 4b88e13599408b44e9096f9af070cd8e, type: 2}
   drawcube: {fileID: 11400000, guid: 3de9a275efdfebd408f4c75d794e5bae, type: 2}
+  drawpyr: {fileID: 11400000, guid: 3ea978b3dfa0a2241bb41c54d2d3f730, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
