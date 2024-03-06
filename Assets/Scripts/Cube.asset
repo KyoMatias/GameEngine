@@ -9,8 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d6f2783f6cb4454a8515cccf8349fc3, type: 3}
-  m_Name: Shape
+  m_Script: {fileID: 11500000, guid: 0ec23ede342e2434eac3fcfbd2d5fdfa, type: 3}
+  m_Name: Cube
   m_EditorClassIdentifier: 
-  points: []
-  transformPosition: {x: 0, y: 0, z: 0}
+  Length: 1
+  Width: 1
+  Height: 1
+  TransformRoot: {x: 0, y: 0, z: -7.79}
